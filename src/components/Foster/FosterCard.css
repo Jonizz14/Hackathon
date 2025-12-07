@@ -1,0 +1,9 @@
+.foster-card {
+  text-align: center;
+}
+
+.foster-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}

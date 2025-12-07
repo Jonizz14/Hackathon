@@ -1,0 +1,31 @@
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  background-color: #8B4513; /* Saddle brown */
+  color: white;
+}
+
+.btn:hover {
+  background-color: #A0522D; /* Sienna */
+}
+
+.btn-primary {
+  background-color: #8B4513;
+}
+
+.btn-secondary {
+  background-color: #556B2F; /* Dark olive green */
+}
+
+.btn-secondary:hover {
+  background-color: #6B8E23; /* Olive drab */
+}
+
+.btn:disabled {
+  background-color: #D3D3D3;
+  cursor: not-allowed;
+}

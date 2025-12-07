@@ -1,0 +1,9 @@
+.animal-filters {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}

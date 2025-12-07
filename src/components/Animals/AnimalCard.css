@@ -1,0 +1,27 @@
+.animal-card {
+  text-align: center;
+}
+
+.animal-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.animal-card h3 {
+  margin: 10px 0;
+  color: #8B4513;
+}
+
+.animal-card p {
+  margin: 5px 0;
+  color: #556B2F;
+}
+
+.price {
+  font-weight: bold;
+  font-size: 18px;
+  color: #8B4513;
+}

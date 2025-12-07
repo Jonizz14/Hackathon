@@ -1,0 +1,29 @@
+.profile-page {
+  padding: 20px;
+}
+
+.profile-info {
+  margin-bottom: 30px;
+}
+
+.profile-sections {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.cart-section, .donations-section {
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.cart-section ul, .donations-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-section li, .donations-section li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}

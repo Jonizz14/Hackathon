@@ -1,0 +1,26 @@
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #8B4513;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D2B48C;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #FFF8DC; /* Cornsilk */
+  color: #333;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #8B4513;
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}

@@ -1,0 +1,69 @@
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const animals = [
+  { id: 1, name: 'Lion', age: 3, price: 5000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Lion' },
+  { id: 2, name: 'Cow', age: 2, price: 800, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Cow' },
+  { id: 3, name: 'Dog', age: 1, price: 300, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Dog' },
+  { id: 4, name: 'Tiger', age: 4, price: 7000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Tiger' },
+  { id: 5, name: 'Sheep', age: 1, price: 400, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Sheep' },
+  { id: 6, name: 'Cat', age: 2, price: 200, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Cat' },
+  { id: 7, name: 'Elephant', age: 5, price: 15000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Elephant' },
+  { id: 8, name: 'Horse', age: 3, price: 2000, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Horse' },
+  { id: 9, name: 'Rabbit', age: 1, price: 50, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Rabbit' },
+  { id: 10, name: 'Panda', age: 2, price: 10000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Panda' }
+];
+
+const foster = [
+  { id: 1, name: 'Buddy', age: 2, category: 'Dog', image: 'https://via.placeholder.com/300x200?text=Buddy', description: 'Friendly dog looking for temporary home.' },
+  { id: 2, name: 'Whiskers', age: 1, category: 'Cat', image: 'https://via.placeholder.com/300x200?text=Whiskers', description: 'Playful kitten needs care.' }
+];
+
+const freeAnimals = [
+  { id: 1, name: 'Max', age: 3, category: 'Dog', image: 'https://via.placeholder.com/300x200?text=Max', description: 'Loyal dog free for adoption.' }
+];
+
+const donations = [];
+
+const shelters = [
+  { id: 1, name: 'Happy Tails Shelter', location: 'Tashkent', description: 'Local shelter for abandoned animals.', image: 'https://via.placeholder.com/300x200?text=Shelter' }
+];
+
+const vetClinics = [
+  { id: 1, name: 'VetCare Clinic', address: '123 Main St, Tashkent', phone: '+998901234567', hours: '9AM-6PM', lat: 41.2995, lng: 69.2401 },
+  { id: 2, name: 'Animal Health Center', address: '456 Elm St, Tashkent', phone: '+998907654321', hours: '8AM-7PM', lat: 41.3100, lng: 69.2500 }
+];
+
+const equipments = [
+  { id: 1, name: 'Dog Food', price: 20, category: 'Food', image: 'https://via.placeholder.com/300x200?text=Dog+Food' },
+  { id: 2, name: 'Cat Toy', price: 10, category: 'Toy', image: 'https://via.placeholder.com/300x200?text=Cat+Toy' },
+  { id: 3, name: 'Pet Bed', price: 50, category: 'Bed', image: 'https://via.placeholder.com/300x200?text=Pet+Bed' },
+  { id: 4, name: 'Bird Cage', price: 100, category: 'Cage', image: 'https://via.placeholder.com/300x200?text=Bird+Cage' },
+  { id: 5, name: 'Fish Tank', price: 150, category: 'Tank', image: 'https://via.placeholder.com/300x200?text=Fish+Tank' },
+  { id: 6, name: 'Chew Toy', price: 15, category: 'Toy', image: 'https://via.placeholder.com/300x200?text=Chew+Toy' },
+  { id: 7, name: 'Litter Box', price: 30, category: 'Accessory', image: 'https://via.placeholder.com/300x200?text=Litter+Box' },
+  { id: 8, name: 'Pet Shampoo', price: 25, category: 'Care', image: 'https://via.placeholder.com/300x200?text=Pet+Shampoo' }
+];
+
+const users = [
+  { id: 1, username: 'admin', password: 'admin', email: 'admin@zoo.com' },
+  { id: 2, username: 'user', password: 'user', email: 'user@zoo.com' }
+];
+
+const db = {
+  animals,
+  foster,
+  freeAnimals,
+  donations,
+  shelters,
+  equipments,
+  users,
+  vetClinics
+};
+
+fs.writeFileSync(path.join(__dirname, 'db.json'), JSON.stringify(db, null, 2));
+console.log('Database generated successfully!');
