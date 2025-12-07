@@ -6,7 +6,6 @@ import './Home.css';
 function Home() {
   return (
     <div className="home-page">
-      {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
           <div className="hero-text">
@@ -50,8 +49,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Services Section */}
       <section className="services-section">
         <div className="container">
           <h2 className="section-title">Our Services</h2>
@@ -96,8 +93,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* Features Section */}
       <section className="features-section">
         <div className="container">
           <div className="features-content">
@@ -142,8 +137,6 @@ function Home() {
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
       <section className="cta-section">
         <div className="container">
           <div className="cta-content">

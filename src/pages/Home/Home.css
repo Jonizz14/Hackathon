@@ -1,22 +1,19 @@
-/* Home Page Styles */
 .home-page {
   min-height: calc(100vh - 130px);
 }
-
-/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
 }
-
-/* Hero Section */
 .hero-section {
   background: linear-gradient(135deg, #10b981 0%, #059669 100%);
   color: white;
   padding: 4rem 0 6rem;
   position: relative;
   overflow: hidden;
+  padding-left: 50px;
+  padding-right: 10px;
 }
 
 .hero-section::before {
@@ -147,8 +144,6 @@
   color: #fbbf24;
   opacity: 0.8;
 }
-
-/* Services Section */
 .services-section {
   padding: 5rem 0;
   background: #f8fafc;
@@ -229,8 +224,6 @@
   color: #5a67d8;
   text-decoration: underline;
 }
-
-/* Features Section */
 .features-section {
   padding: 5rem 0;
   background: white;
@@ -312,7 +305,6 @@
   opacity: 0.8;
 }
 
-/* CTA Section */
 .cta-section {
   padding: 5rem 0;
   background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
@@ -346,12 +338,7 @@
 .btn-outline {
   background: transparent;
   color: white;
-  border: 2px solid rgba(255, 255, 255, 0.8);
-}
-
-.btn-outline:hover {
-  background: rgba(255, 255, 255, 0.1);
-  border-color: white;
+  padding-top: 15px;
 }
 
 /* Responsive Design */
