@@ -191,28 +191,28 @@
       "email": "user@zoo.com"
     },
     {
-      "id": 1765085583714,
+      "id": "1765085583714",
       "username": "jahongir_dev1",
       "password": "uRNXgKyc8k0",
       "email": "admin@testplatform.com"
     },
     {
-      "id": 1765085607632,
+      "id": "1765085607632",
       "username": "jahongir_dev1",
       "password": "uRNXgKyc8k0",
       "email": "admin@testplatform.com"
     },
     {
-      "id": 1765085754583,
+      "id": "1765085754583",
       "username": "jahongir_dev1",
       "password": "uRNXgKyc8k0",
       "email": "admin@testplatform.com"
     },
     {
-      "id": 1765087979555,
-      "username": "jahongir_dev1",
-      "password": "uRNXgKyc8k0",
-      "email": "admin@testplatform.com"
+      "id": "1765090979250",
+      "username": "abdulla",
+      "password": "12345",
+      "email": "abdulla@gamil.com"
     }
   ],
   "vetClinics": [
