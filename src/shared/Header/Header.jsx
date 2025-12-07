@@ -118,9 +118,6 @@ function Header() {
             {user ? (
               <>
                 <Link to="/profile" className="profile-btn" onClick={closeAllDropdowns}>
-                  <div className="user-avatar">
-                    <FaUser />
-                  </div>
                   <span>Profile</span>
                 </Link>
                 <button onClick={() => { logout(); closeAllDropdowns(); }}>Logout</button>

@@ -79,6 +79,15 @@
       "price": 10000,
       "category": "Exotic",
       "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 1765097487837,
+      "name": "jonizzz",
+      "age": 3,
+      "price": 30,
+      "category": "Home Pets",
+      "image": "",
+      "description": "Salom"
     }
   ],
   "foster": [
@@ -463,6 +472,12 @@
       "username": "user",
       "password": "user",
       "email": "user@zoo.com"
+    },
+    {
+      "id": 1765094261313,
+      "username": "jahongir_dev1",
+      "password": "uRNXgKyc8k0",
+      "email": "admin@testplatform.com"
     }
   ],
   "vetClinics": [
