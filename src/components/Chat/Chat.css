@@ -10,19 +10,13 @@
   width: 65px;
   height: 65px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #10309a 0%, #0b1e70 100%);
+  background: #2c3e50;
   cursor: pointer;
-  box-shadow: 0 0 12px rgba(16, 48, 154, 0.4);
-  transition: all 0.5s cubic-bezier(0.4, 0.2, 0, 1);
+  transition: 0.5s;
   overflow: hidden;
   position: relative;
   transform-origin: bottom right;
   z-index: 4;
-}
-
-.chat__container:hover {
-  box-shadow: 0 0 25px rgba(16, 48, 154, 0.7), 0 0 40px rgba(16, 48, 154, 0.4);
-
 }
 
 .chat__toggle-btn {
@@ -51,6 +45,11 @@
   transform: scale(1.1);
 }
 
+.chat__icon-wrapper{
+  width: 100%;
+  height: 100%;
+}
+
 .chat__container.chat__container--expanded {
   width: 340px;
   height: 460px;
@@ -60,7 +59,7 @@
   overflow: hidden;
   transform-origin: bottom right;
   animation: expandLeft 0.5s cubic-bezier(0.4, 0.2, 0, 1);
-  border: 1px solid #0b2477;
+  border: 1px solid #10b981;
 }
 
 .chat__container.chat__container--full-expanded {
@@ -101,7 +100,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #10309a;
+  background: #10b981;
   color: #fff;
   padding: 12px 16px;
 }
@@ -222,6 +221,7 @@
   background: #cbce35;
   color: #fff;
 }
+
 
 .chat__dislike-btn.chat__dislike-btn--active {
   background: #f44336;
@@ -484,6 +484,7 @@
   .chat__input input {
     padding: 12px;
   }
+
 
   .chat__input button {
     padding: 12px 16px;
