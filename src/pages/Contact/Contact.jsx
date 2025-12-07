@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Notyf } from 'notyf'
 import 'notyf/notyf.min.css'
+import { FaFacebook, FaInstagram, FaTelegram } from 'react-icons/fa'
 import './Contact.css'
 
 function Contact() {
@@ -68,39 +69,77 @@ ${messageSend.trim()}
   return (
     <div className="contact-page">
       <h1 className="contact-title">Get in Touch</h1>
-      <div className="contact-container">
-        <form onSubmit={contactSend} className="contact-form">
-        <div className="form-group">
-          <label htmlFor="name">Name:</label>
-          <input
-            type="text"
-            id="name"
-            value={nameSend}
-            onChange={(e) => setNameSend(e.target.value)}
-            required
-          />
+
+      <div className="contact-content">
+        <div className="contact-info">
+          <h2>Contact Information</h2>
+          <div className="info-item">
+            <strong>Address:</strong>
+            <p>Tashkent, Uzbekistan</p>
+          </div>
+          <div className="info-item">
+            <strong>Phone:</strong>
+            <p>+998 90 123 45 67</p>
+          </div>
+          <div className="info-item">
+            <strong>Email:</strong>
+            <p>info@zoomarket.uz</p>
+          </div>
+          <div className="info-item">
+            <strong>Working Hours:</strong>
+            <p>Mon-Fri: 9AM-6PM<br />Sat-Sun: 10AM-4PM</p>
+          </div>
+          <div className="social-links">
+            <h3>Follow Us</h3>
+            <div className="social-icons">
+              <a href="#" className="social-link" title="Facebook">
+                <FaFacebook size={24} />
+              </a>
+              <a href="#" className="social-link" title="Instagram">
+                <FaInstagram size={24} />
+              </a>
+              <a href="#" className="social-link" title="Telegram">
+                <FaTelegram size={24} />
+              </a>
+            </div>
+          </div>
         </div>
-        <div className="form-group">
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={emailSend}
-            onChange={(e) => setEmailSend(e.target.value)}
-            required
-          />
+
+        <div className="contact-form-container">
+          <h2>Send us a Message</h2>
+          <form onSubmit={contactSend} className="contact-form">
+            <div className="form-group">
+              <label htmlFor="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                value={nameSend}
+                onChange={(e) => setNameSend(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                value={emailSend}
+                onChange={(e) => setEmailSend(e.target.value)}
+                required
+              />
+            </div>
+            <div className="form-group">
+              <label htmlFor="message">Message:</label>
+              <textarea
+                id="message"
+                value={messageSend}
+                onChange={(e) => setMessageSend(e.target.value)}
+                required
+              />
+            </div>
+            <button type="submit" className="submit-btn">Send Message</button>
+          </form>
         </div>
-        <div className="form-group">
-          <label htmlFor="message">Message:</label>
-          <textarea
-            id="message"
-            value={messageSend}
-            onChange={(e) => setMessageSend(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit" className="submit-btn">Send Message</button>
-      </form>
       </div>
     </div>
   )

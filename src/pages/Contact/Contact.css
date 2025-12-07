@@ -1,10 +1,7 @@
 .contact-page {
   min-height: calc(100vh - 70px);
   background: white;
-  padding: 4rem 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 4rem 2rem;
 }
 
 .contact-title {
@@ -26,14 +23,87 @@
   border-radius: 2px;
 }
 
-.contact-container {
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-info {
+  background: #f8fafc;
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid #e2e8f0;
+}
+
+.contact-info h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+}
+
+.info-item {
+  margin-bottom: 1.5rem;
+}
+
+.info-item strong {
+  color: #228b22;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.info-item p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.social-links {
+  margin-top: 2rem;
+}
+
+.social-links h3 {
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.social-icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-link {
+  color: #228b22;
+  text-decoration: none;
+  padding: 0.75rem;
+  border: 1px solid #228b22;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link:hover {
+  background: #228b22;
+  color: white;
+}
+
+.contact-form-container {
   background: white;
-  padding: 40px;
+  padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 8px 25px rgba(44, 62, 80, 0.15);
-  max-width: 500px;
-  width: 100%;
   border: 1px solid #e2e8f0;
+}
+
+.contact-form-container h2 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
 }
 
 .contact-form {
@@ -106,13 +176,28 @@
 }
 
 /* Responsive design */
-@media (max-width: 480px) {
-  .contact-container {
-    padding: 30px 20px;
-    margin: 20px;
+@media (max-width: 768px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
 
-  .contact-container h1 {
+  .contact-info,
+  .contact-form-container {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-page {
+    padding: 2rem 1rem;
+  }
+
+  .contact-title {
     font-size: 2rem;
+  }
+
+  .social-icons {
+    flex-direction: column;
   }
 }
