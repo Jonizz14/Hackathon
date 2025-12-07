@@ -99,23 +99,7 @@ button:hover {
   border-radius: 4px;
 }
 
-/* Header */
-.header {
-  background-color: var(--brown);
-  color: white;
-  padding: 1rem 0;
-}
-
-.nav {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.nav a {
-  color: white;
-  text-decoration: none;
-}
+/* Header styles moved to Header.css */
 
 /* Footer */
 .footer {
