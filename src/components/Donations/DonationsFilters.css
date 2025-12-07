@@ -1,0 +1,31 @@
+.donations-filters {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.donations-filters .search-input,
+.donations-filters .sort-select {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+@media (max-width: 768px) {
+  .donations-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .donations-filters .search-input,
+  .donations-filters .sort-select {
+    min-width: auto;
+  }
+}

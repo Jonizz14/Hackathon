@@ -4,7 +4,7 @@
   padding: 4rem 0;
 }
 
-.donations-page h1 {
+.donations-title {
   text-align: center;
   font-size: 2.5rem;
   font-weight: 800;
@@ -13,7 +13,7 @@
   position: relative;
 }
 
-.donations-page h1::after {
+.donations-title::after {
   content: '';
   display: block;
   width: 100px;
@@ -21,6 +21,19 @@
   background: linear-gradient(90deg, #228b22, #deb887);
   margin: 1rem auto;
   border-radius: 2px;
+}
+
+.filters-section {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-bottom: 2rem;
+}
+
+.shelters-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
 }
 
 .donation-form {

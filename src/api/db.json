@@ -97,6 +97,70 @@
       "category": "Cat",
       "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
       "description": "Playful kitten needs care."
+    },
+    {
+      "id": 3,
+      "name": "Max",
+      "age": 3,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop",
+      "description": "Energetic dog seeking foster care."
+    },
+    {
+      "id": 4,
+      "name": "Luna",
+      "age": 2,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop",
+      "description": "Shy cat needs a quiet home."
+    },
+    {
+      "id": 5,
+      "name": "Rocky",
+      "age": 4,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1549489772-3a79b8b1c3f8?w=400&h=300&fit=crop",
+      "description": "Loyal companion looking for care."
+    },
+    {
+      "id": 6,
+      "name": "Bella",
+      "age": 1,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=300&fit=crop",
+      "description": "Curious kitten exploring new homes."
+    },
+    {
+      "id": 7,
+      "name": "Charlie",
+      "age": 2,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop",
+      "description": "Playful pup ready for adventure."
+    },
+    {
+      "id": 8,
+      "name": "Milo",
+      "age": 3,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=400&h=300&fit=crop",
+      "description": "Gentle cat seeking temporary shelter."
+    },
+    {
+      "id": 9,
+      "name": "Daisy",
+      "age": 1,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "description": "Sweet puppy needing foster love."
+    },
+    {
+      "id": 10,
+      "name": "Oliver",
+      "age": 2,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      "description": "Affectionate cat looking for care."
     }
   ],
   "freeAnimals": [
@@ -107,9 +171,142 @@
       "category": "Dog",
       "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop",
       "description": "Loyal dog free for adoption."
+    },
+    {
+      "id": 2,
+      "name": "Luna",
+      "age": 2,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop",
+      "description": "Graceful cat available for free adoption."
+    },
+    {
+      "id": 3,
+      "name": "Rocky",
+      "age": 4,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop",
+      "description": "Strong and friendly dog seeking home."
+    },
+    {
+      "id": 4,
+      "name": "Bella",
+      "age": 1,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=300&fit=crop",
+      "description": "Playful kitten ready for adoption."
+    },
+    {
+      "id": 5,
+      "name": "Charlie",
+      "age": 2,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1549489772-3a79b8b1c3f8?w=400&h=300&fit=crop",
+      "description": "Adventurous dog free to adopt."
+    },
+    {
+      "id": 6,
+      "name": "Milo",
+      "age": 3,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=400&h=300&fit=crop",
+      "description": "Calm cat available for free adoption."
+    },
+    {
+      "id": 7,
+      "name": "Daisy",
+      "age": 1,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop",
+      "description": "Sweet puppy free for adoption."
+    },
+    {
+      "id": 8,
+      "name": "Oliver",
+      "age": 2,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop",
+      "description": "Friendly cat seeking new home."
+    },
+    {
+      "id": 9,
+      "name": "Buddy",
+      "age": 3,
+      "category": "Dog",
+      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop",
+      "description": "Loyal companion free to adopt."
+    },
+    {
+      "id": 10,
+      "name": "Whiskers",
+      "age": 1,
+      "category": "Cat",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop",
+      "description": "Curious kitten available for adoption."
     }
   ],
-  "donations": [],
+  "donations": [
+    {
+      "id": 1,
+      "amount": 50,
+      "shelterName": "Happy Tails Shelter",
+      "date": "2023-10-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "amount": 100,
+      "shelterName": "Paws & Claws Rescue",
+      "date": "2023-10-05T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "amount": 25,
+      "shelterName": "Furry Friends Haven",
+      "date": "2023-10-10T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "amount": 75,
+      "shelterName": "Animal Care Center",
+      "date": "2023-10-15T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "amount": 30,
+      "shelterName": "Pet Sanctuary",
+      "date": "2023-10-20T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "amount": 60,
+      "shelterName": "Happy Tails Shelter",
+      "date": "2023-10-25T00:00:00.000Z"
+    },
+    {
+      "id": 7,
+      "amount": 40,
+      "shelterName": "Paws & Claws Rescue",
+      "date": "2023-11-01T00:00:00.000Z"
+    },
+    {
+      "id": 8,
+      "amount": 90,
+      "shelterName": "Furry Friends Haven",
+      "date": "2023-11-05T00:00:00.000Z"
+    },
+    {
+      "id": 9,
+      "amount": 20,
+      "shelterName": "Animal Care Center",
+      "date": "2023-11-10T00:00:00.000Z"
+    },
+    {
+      "id": 10,
+      "amount": 55,
+      "shelterName": "Pet Sanctuary",
+      "date": "2023-11-15T00:00:00.000Z"
+    }
+  ],
   "shelters": [
     {
       "id": 1,
@@ -117,6 +314,69 @@
       "location": "Tashkent",
       "description": "Local shelter for abandoned animals.",
       "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 2,
+      "name": "Paws & Claws Rescue",
+      "location": "Samarkand",
+      "description": "Dedicated to rescuing and rehoming pets.",
+      "image": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Furry Friends Haven",
+      "location": "Bukhara",
+      "description": "Safe haven for all furry friends in need.",
+      "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Animal Care Center",
+      "location": "Khiva",
+      "description": "Comprehensive care for animals in distress.",
+      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Pet Sanctuary",
+      "location": "Nukus",
+      "description": "Sanctuary providing love and care to pets.",
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "Compassionate Creatures",
+      "location": "Andijan",
+      "description": "Compassionate care for all creatures great and small.",
+      "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 7,
+      "name": "Loving Paws Shelter",
+      "location": "Fergana",
+      "description": "Loving home for paws in need.",
+      "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 8,
+      "name": "Hope for Animals",
+      "location": "Namangan",
+      "description": "Bringing hope to animals through care and adoption.",
+      "image": "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 9,
+      "name": "Pet Protectors",
+      "location": "Termez",
+      "description": "Protecting and nurturing pets in our community.",
+      "image": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 10,
+      "name": "Animal Welfare Society",
+      "location": "Urgench",
+      "description": "Society dedicated to animal welfare and happiness.",
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
     }
   ],
   "equipments": [
@@ -175,6 +435,20 @@
       "price": 25,
       "category": "Care",
       "image": "https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 9,
+      "name": "Dog Leash",
+      "price": 12,
+      "category": "Accessory",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 10,
+      "name": "Cat Scratching Post",
+      "price": 35,
+      "category": "Toy",
+      "image": "https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop"
     }
   ],
   "users": [
@@ -199,7 +473,8 @@
       "phone": "+998901234567",
       "hours": "9AM-6PM",
       "lat": 41.2995,
-      "lng": 69.2401
+      "lng": 69.2401,
+      "image": "https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop"
     },
     {
       "id": 2,
@@ -208,7 +483,88 @@
       "phone": "+998907654321",
       "hours": "8AM-7PM",
       "lat": 41.31,
-      "lng": 69.25
+      "lng": 69.25,
+      "image": "https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 3,
+      "name": "Paws & Claws Vet",
+      "address": "789 Oak St, Samarkand",
+      "phone": "+998912345678",
+      "hours": "10AM-5PM",
+      "lat": 39.654,
+      "lng": 66.975,
+      "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 4,
+      "name": "Furry Friends Clinic",
+      "address": "321 Pine St, Bukhara",
+      "phone": "+998923456789",
+      "hours": "9AM-6PM",
+      "lat": 39.768,
+      "lng": 64.428,
+      "image": "https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 5,
+      "name": "Pet Wellness Center",
+      "address": "654 Cedar St, Khiva",
+      "phone": "+998934567890",
+      "hours": "8AM-7PM",
+      "lat": 41.378,
+      "lng": 60.363,
+      "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 6,
+      "name": "Companion Care Vet",
+      "address": "987 Birch St, Nukus",
+      "phone": "+998945678901",
+      "hours": "10AM-6PM",
+      "lat": 42.467,
+      "lng": 59.613,
+      "image": "https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 7,
+      "name": "Healthy Paws Clinic",
+      "address": "147 Maple St, Andijan",
+      "phone": "+998956789012",
+      "hours": "9AM-5PM",
+      "lat": 40.783,
+      "lng": 72.333,
+      "image": "https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 8,
+      "name": "Vet Excellence",
+      "address": "258 Walnut St, Fergana",
+      "phone": "+998967890123",
+      "hours": "8AM-6PM",
+      "lat": 40.384,
+      "lng": 71.787,
+      "image": "https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 9,
+      "name": "Animal Wellness Vet",
+      "address": "369 Chestnut St, Namangan",
+      "phone": "+998978901234",
+      "hours": "10AM-7PM",
+      "lat": 40.998,
+      "lng": 71.672,
+      "image": "https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=400&h=300&fit=crop"
+    },
+    {
+      "id": 10,
+      "name": "Care for Pets Clinic",
+      "address": "741 Spruce St, Termez",
+      "phone": "+998989012345",
+      "hours": "9AM-6PM",
+      "lat": 37.224,
+      "lng": 67.278,
+      "image": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop"
     }
   ]
 }

@@ -1,16 +1,31 @@
 .donation-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
 }
 
 .shelter-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.donation-card h3 {
+  margin: 10px 0;
+  color: #8B4513;
+}
+
+.donation-card p {
+  margin: 5px 0;
+  color: #556B2F;
 }
 
 .donation-buttons {
   display: flex;
   gap: 10px;
   justify-content: center;
-  margin-top: 15px;
+  margin-top: auto;
 }

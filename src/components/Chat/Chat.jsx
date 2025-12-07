@@ -115,11 +115,12 @@ export default function Chat() {
                         role: "model",
                         parts: [
                             {
-                                text: `Siz Sergeli tumanidagi ixtisoslashtirilgan maktabimiz bo'yicha yordam beradigan AI siz.
-                                        Bizning maktabimizda 500 dan ortiq o'quvchi, 50 dan ortiq ustozlar, 20 dan ortiq sinflar mavjud.
-                                        Manzilimiz: Sergeli tumani, Nilufar MFY, Sergeli 2-mavzesi, 64A-uy.
-                                        Maktabda Mock testlar, Zakovatlar va turli olimpiadalar o'tadi.Ali sport vaziri maktabizmida.
-                                        Foydalanuvchiga salom aytish va maktab haqida savollariga yordam berish kerak.maktabda eng zo'r ustoz maftuna saidova matematika fani oqutuvchsi.Bu saytni Jahongir To'xtayev va Jabborov Adham yaratgan ular frontend va UI/UX qismini yozgan.`
+                                text: `Siz ZooMarket hayvonlar bozori va boshpana sayti bo'yicha yordam beradigan AI siz.
+                                        Bizning saytimizda hayvonlarni sotib olish, foster qilish, bepul berish, veterinariya klinikalarini topish, donatsiya qilish va hayvonlar uchun jihozlar sotib olish mumkin.
+                                        Bizda turli hayvonlar: sherlar, sigirlar, itlar, mushuklar, quyonlar, fil va boshqalar mavjud.
+                                        Manzilimiz: Toshkent shahri, O'zbekiston.
+                                        Foydalanuvchiga salom aytish va sayt haqida savollariga yordam berish kerak.
+                                        Bu saytni Jahongir To'xtayev va Jabborov Adham yaratgan, ular frontend va UI/UX qismini yozgan.`
                             }
                         ]
                     },
@@ -224,7 +225,7 @@ export default function Chat() {
                 {open && (
                     <>
                         <div className="chat__header">
-                            <h1>STIM AI</h1>
+                            <h1>ZooMarket AI</h1>
                             <div className="chat__header-buttons">
                                 {!isMobile && (
                                     <button className="chat__expand-btn" onClick={toggleExpand} title={expanded ? "Kichiklashtirish" : "Kattalashtirish"}>
