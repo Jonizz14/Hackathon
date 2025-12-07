@@ -110,6 +110,7 @@ function Header() {
             <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
             <li><Link to="/vet-clinics" onClick={closeAllDropdowns}>Vet Clinics</Link></li>
             <li><Link to="/equipments" onClick={closeAllDropdowns}>Equipments</Link></li>
+            <li><Link to="/contact" onClick={closeAllDropdowns}>Contact</Link></li>
           </ul>
           
           <div className="header__nav-right-section">
@@ -151,6 +152,7 @@ function Header() {
               <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
               <li><Link to="/vet-clinics" onClick={closeAllDropdowns}>Vet Clinics</Link></li>
               <li><Link to="/equipments" onClick={closeAllDropdowns}>Equipments</Link></li>
+              <li><Link to="/contact" onClick={closeAllDropdowns}>Contact</Link></li>
               {user ? (
                 <>
                   <li><Link to="/profile" onClick={closeAllDropdowns}>Profile</Link></li>

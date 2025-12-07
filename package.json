@@ -14,6 +14,7 @@
     "@google/genai": "^1.31.0",
     "framer-motion": "^12.23.25",
     "leaflet": "^1.9.4",
+    "notyf": "^3.10.0",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-icons": "^5.5.0",

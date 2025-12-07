@@ -15,6 +15,7 @@ import Equipments from "./pages/Equipments/Equipments";
 import Login from "./pages/Login/Login";
 import Profile from "./pages/Profile/Profile";
 import Cart from "./pages/Cart/Cart";
+import Contact from "./pages/Contact/Contact";
 import "./App.css";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
                 <Route path="equipments" element={<Equipments />} />
                 <Route path="cart" element={<Cart />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
           </BrowserRouter>

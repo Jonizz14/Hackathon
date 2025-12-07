@@ -1,6 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import { FaInstagram } from "react-icons/fa";
+import { FaFacebook } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa";
+
+
+
 
 function Footer() {
   return (
@@ -10,10 +17,10 @@ function Footer() {
           <h3>ZooMarket Pro</h3>
           <p>Your trusted platform for animal care, adoption, and products. Connecting loving homes with animals in need.</p>
           <div className="social-links">
-            <a href="#" title="Facebook">📘</a>
-            <a href="#" title="Instagram">📷</a>
-            <a href="#" title="Twitter">🐦</a>
-            <a href="#" title="YouTube">📺</a>
+            <a href="#" title="Facebook"><FaFacebook /></a>
+            <a href="#" title="Instagram"><FaInstagram /></a>
+            <a href="#" title="Twitter"><FaTwitter /></a>
+            <a href="#" title="YouTube"><FaYoutube /></a>
           </div>
         </div>
         
