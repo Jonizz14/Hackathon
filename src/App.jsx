@@ -15,6 +15,7 @@ import Equipments from "./pages/Equipments/Equipments";
 import Login from "./pages/Login/Login";
 import Profile from "./pages/Profile/Profile";
 import Cart from "./pages/Cart/Cart";
+import AddAnimal from "./pages/AddAnimal/AddAnimal";
 import "./App.css";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
               }>
                 <Route index element={<Home />} />
                 <Route path="animals" element={<Animals />} />
+                <Route path="add-animal" element={<AddAnimal />} />
                 <Route path="foster" element={<Foster />} />
                 <Route path="free-give" element={<FreeGive />} />
                 <Route path="donations" element={<Donations />} />

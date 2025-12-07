@@ -9,6 +9,12 @@ const Animals = () => {
   const [animals, setAnimals] = useState([]);
   const [filteredAnimals, setFilteredAnimals] = useState([]);
   const [showAddForm, setShowAddForm] = useState(false);
+  const [filters, setFilters] = useState({
+    category: '',
+    minAge: '',
+    maxAge: '',
+    search: ''
+  });
 
   useEffect(() => {
     const fetchAnimals = async () => {
@@ -23,7 +29,7 @@ const Animals = () => {
     fetchAnimals();
   }, []);
 
-  const handleFilter = (filters) => {
+  const applyFilters = () => {
     let filtered = animals;
 
     if (filters.search) {
@@ -47,21 +53,49 @@ const Animals = () => {
     setFilteredAnimals(filtered);
   };
 
+  useEffect(() => {
+    applyFilters();
+  }, [filters, animals]);
+
   const handleAddAnimal = (newAnimal) => {
     setAnimals(prev => [...prev, newAnimal]);
     setFilteredAnimals(prev => [...prev, newAnimal]);
     setShowAddForm(false);
   };
 
+  const handleDeleteAnimal = async (animalId) => {
+    if (window.confirm('Are you sure you want to delete this animal?')) {
+      try {
+        await api.deleteAnimal(animalId);
+        setAnimals(prev => prev.filter(animal => animal.id !== animalId));
+        setFilteredAnimals(prev => prev.filter(animal => animal.id !== animalId));
+      } catch (error) {
+        console.error('Error deleting animal:', error);
+        alert('Failed to delete animal. Please try again.');
+      }
+    }
+  };
+
   return (
     <div className="animals-page">
       <h1>Animals for Sale</h1>
-      <button onClick={() => setShowAddForm(!showAddForm)}>
-        {showAddForm ? 'Cancel' : 'Add New Animal'}
-      </button>
       {showAddForm && <AddAnimalForm onAdd={handleAddAnimal} />}
-      <AnimalFilters onFilter={handleFilter} />
-      <AnimalList animals={filteredAnimals} />
+      <div className="search-bar">
+        <input
+          type="text"
+          placeholder="Search by name"
+          value={filters.search}
+          onChange={(e) => setFilters({ ...filters, search: e.target.value })}
+        />
+      </div>
+      <div className="animals-container">
+        <aside className="animals-sidebar">
+          <AnimalFilters filters={filters} setFilters={setFilters} />
+        </aside>
+        <main className="animals-main">
+          <AnimalList animals={filteredAnimals} onDelete={handleDeleteAnimal} />
+        </main>
+      </div>
     </div>
   );
 };

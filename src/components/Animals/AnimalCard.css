@@ -25,3 +25,22 @@
   font-size: 18px;
   color: #8B4513;
 }
+
+.animal-card-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.delete-btn {
+  background: #dc2626 !important;
+  color: white !important;
+  padding: 0.5rem !important;
+  min-width: auto !important;
+  border-radius: 8px !important;
+}
+
+.delete-btn:hover {
+  background: #b91c1c !important;
+}

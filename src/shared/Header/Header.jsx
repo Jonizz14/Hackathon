@@ -105,6 +105,7 @@ function Header() {
         <nav className="header__desktop-menu">
           <ul className="header__nav-links">
             <li><Link to="/animals" onClick={closeAllDropdowns}>Animals</Link></li>
+            <li><Link to="/add-animal" onClick={closeAllDropdowns}>Add Animal</Link></li>
             <li><Link to="/foster" onClick={closeAllDropdowns}>Foster</Link></li>
             <li><Link to="/free-give" onClick={closeAllDropdowns}>Free Give</Link></li>
             <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
@@ -146,6 +147,7 @@ function Header() {
           >
             <ul>
               <li><Link to="/animals" onClick={closeAllDropdowns}>Animals</Link></li>
+              <li><Link to="/add-animal" onClick={closeAllDropdowns}>Add Animal</Link></li>
               <li><Link to="/foster" onClick={closeAllDropdowns}>Foster</Link></li>
               <li><Link to="/free-give" onClick={closeAllDropdowns}>Free Give</Link></li>
               <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
@@ -173,3 +175,4 @@ function Header() {
 }
 
 export default Header;
+

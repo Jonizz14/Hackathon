@@ -1,20 +1,108 @@
 .free-give-page {
-  padding: 20px;
+  min-height: calc(100vh - 70px);
+  background: white;
+  padding: 4rem 0;
+}
+
+.free-give-page h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #2c3e50;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.free-give-page h1::after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, #228b22, #deb887);
+  margin: 1rem auto;
+  border-radius: 2px;
 }
 
 .free-animals-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  margin-top: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 .free-animal-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.15);
+  transition: all 0.3s ease;
+  border: 1px solid #e2e8f0;
   text-align: center;
+}
+
+.free-animal-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(44, 62, 80, 0.25);
 }
 
 .free-animal-card img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.free-animal-card h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.free-animal-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.free-animal-info div {
+  padding: 0.5rem;
+  background: #f8fafc;
+  border-radius: 8px;
+}
+
+.free-animal-info strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.free-animal-description {
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.adopt-btn {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+.adopt-btn:hover {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
 }

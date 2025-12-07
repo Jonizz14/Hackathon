@@ -1,13 +1,18 @@
 import Card from '../UI/Card';
 import Button from '../UI/Button';
+import { FaTrash } from 'react-icons/fa';
 import { useCart } from '../../context/CartContext';
 import './AnimalCard.css';
 
-const AnimalCard = ({ animal }) => {
+const AnimalCard = ({ animal, onDelete }) => {
   const { addToCart } = useCart();
 
   const handleAddToCart = () => {
     addToCart(animal, 'animal');
+  };
+
+  const handleDelete = () => {
+    onDelete(animal.id);
   };
 
   return (
@@ -17,7 +22,9 @@ const AnimalCard = ({ animal }) => {
       <p>Age: {animal.age} years</p>
       <p>Category: {animal.category}</p>
       <p className="price">${animal.price}</p>
-      <Button onClick={handleAddToCart}>Buy Now</Button>
+      <div className="animal-card-buttons">
+        <Button onClick={handleAddToCart}>Buy Now</Button>
+      </div>
     </Card>
   );
 };

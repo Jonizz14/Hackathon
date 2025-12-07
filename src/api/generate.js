@@ -6,31 +6,31 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const animals = [
-  { id: 1, name: 'Lion', age: 3, price: 5000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Lion' },
-  { id: 2, name: 'Cow', age: 2, price: 800, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Cow' },
-  { id: 3, name: 'Dog', age: 1, price: 300, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Dog' },
-  { id: 4, name: 'Tiger', age: 4, price: 7000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Tiger' },
-  { id: 5, name: 'Sheep', age: 1, price: 400, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Sheep' },
-  { id: 6, name: 'Cat', age: 2, price: 200, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Cat' },
-  { id: 7, name: 'Elephant', age: 5, price: 15000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Elephant' },
-  { id: 8, name: 'Horse', age: 3, price: 2000, category: 'Farm', image: 'https://via.placeholder.com/300x200?text=Horse' },
-  { id: 9, name: 'Rabbit', age: 1, price: 50, category: 'Home Pets', image: 'https://via.placeholder.com/300x200?text=Rabbit' },
-  { id: 10, name: 'Panda', age: 2, price: 10000, category: 'Exotic', image: 'https://via.placeholder.com/300x200?text=Panda' }
+  { id: 1, name: 'Lion', age: 3, price: 5000, category: 'Exotic', image: 'https://images.unsplash.com/photo-1549489772-3a79b8b1c3f8?w=400&h=300&fit=crop' },
+  { id: 2, name: 'Cow', age: 2, price: 800, category: 'Farm', image: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop' },
+  { id: 3, name: 'Dog', age: 1, price: 300, category: 'Home Pets', image: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop' },
+  { id: 4, name: 'Tiger', age: 4, price: 7000, category: 'Exotic', image: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop' },
+  { id: 5, name: 'Sheep', age: 1, price: 400, category: 'Farm', image: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop' },
+  { id: 6, name: 'Cat', age: 2, price: 200, category: 'Home Pets', image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop' },
+  { id: 7, name: 'Elephant', age: 5, price: 15000, category: 'Exotic', image: 'https://images.unsplash.com/photo-1564760055775-d63b17a55c44?w=400&h=300&fit=crop' },
+  { id: 8, name: 'Horse', age: 3, price: 2000, category: 'Farm', image: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e?w=400&h=300&fit=crop' },
+  { id: 9, name: 'Rabbit', age: 1, price: 50, category: 'Home Pets', image: 'https://images.unsplash.com/photo-1425082661705-1834bfd09dca?w=400&h=300&fit=crop' },
+  { id: 10, name: 'Panda', age: 2, price: 10000, category: 'Exotic', image: 'https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop' }
 ];
 
 const foster = [
-  { id: 1, name: 'Buddy', age: 2, category: 'Dog', image: 'https://via.placeholder.com/300x200?text=Buddy', description: 'Friendly dog looking for temporary home.' },
-  { id: 2, name: 'Whiskers', age: 1, category: 'Cat', image: 'https://via.placeholder.com/300x200?text=Whiskers', description: 'Playful kitten needs care.' }
+  { id: 1, name: 'Buddy', age: 2, category: 'Dog', image: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop', description: 'Friendly dog looking for temporary home.' },
+  { id: 2, name: 'Whiskers', age: 1, category: 'Cat', image: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400&h=300&fit=crop', description: 'Playful kitten needs care.' }
 ];
 
 const freeAnimals = [
-  { id: 1, name: 'Max', age: 3, category: 'Dog', image: 'https://via.placeholder.com/300x200?text=Max', description: 'Loyal dog free for adoption.' }
+  { id: 1, name: 'Max', age: 3, category: 'Dog', image: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=400&h=300&fit=crop', description: 'Loyal dog free for adoption.' }
 ];
 
 const donations = [];
 
 const shelters = [
-  { id: 1, name: 'Happy Tails Shelter', location: 'Tashkent', description: 'Local shelter for abandoned animals.', image: 'https://via.placeholder.com/300x200?text=Shelter' }
+  { id: 1, name: 'Happy Tails Shelter', location: 'Tashkent', description: 'Local shelter for abandoned animals.', image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop' }
 ];
 
 const vetClinics = [
@@ -39,14 +39,14 @@ const vetClinics = [
 ];
 
 const equipments = [
-  { id: 1, name: 'Dog Food', price: 20, category: 'Food', image: 'https://via.placeholder.com/300x200?text=Dog+Food' },
-  { id: 2, name: 'Cat Toy', price: 10, category: 'Toy', image: 'https://via.placeholder.com/300x200?text=Cat+Toy' },
-  { id: 3, name: 'Pet Bed', price: 50, category: 'Bed', image: 'https://via.placeholder.com/300x200?text=Pet+Bed' },
-  { id: 4, name: 'Bird Cage', price: 100, category: 'Cage', image: 'https://via.placeholder.com/300x200?text=Bird+Cage' },
-  { id: 5, name: 'Fish Tank', price: 150, category: 'Tank', image: 'https://via.placeholder.com/300x200?text=Fish+Tank' },
-  { id: 6, name: 'Chew Toy', price: 15, category: 'Toy', image: 'https://via.placeholder.com/300x200?text=Chew+Toy' },
-  { id: 7, name: 'Litter Box', price: 30, category: 'Accessory', image: 'https://via.placeholder.com/300x200?text=Litter+Box' },
-  { id: 8, name: 'Pet Shampoo', price: 25, category: 'Care', image: 'https://via.placeholder.com/300x200?text=Pet+Shampoo' }
+  { id: 1, name: 'Dog Food', price: 20, category: 'Food', image: 'https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=400&h=300&fit=crop' },
+  { id: 2, name: 'Cat Toy', price: 10, category: 'Toy', image: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop' },
+  { id: 3, name: 'Pet Bed', price: 50, category: 'Bed', image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=400&h=300&fit=crop' },
+  { id: 4, name: 'Bird Cage', price: 100, category: 'Cage', image: 'https://images.unsplash.com/photo-1504274066651-8d31a536b11a?w=400&h=300&fit=crop' },
+  { id: 5, name: 'Fish Tank', price: 150, category: 'Tank', image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop' },
+  { id: 6, name: 'Chew Toy', price: 15, category: 'Toy', image: 'https://images.unsplash.com/photo-1568572933382-74d440642117?w=400&h=300&fit=crop' },
+  { id: 7, name: 'Litter Box', price: 30, category: 'Accessory', image: 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop' },
+  { id: 8, name: 'Pet Shampoo', price: 25, category: 'Care', image: 'https://images.unsplash.com/photo-1594736797933-d0e22ba2c8e0?w=400&h=300&fit=crop' }
 ];
 
 const users = [
