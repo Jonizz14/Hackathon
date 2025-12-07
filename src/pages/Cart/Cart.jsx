@@ -3,9 +3,7 @@ import Button from '../../components/UI/Button';
 import './Cart.css';
 
 const Cart = () => {
-  const { cart, removeFromCart, clearCart } = useCart();
-
-  const total = cart.reduce((sum, item) => sum + (item.price || 0), 0);
+  const { cart, removeFromCart, updateQuantity, clearCart, getTotalPrice } = useCart();
 
   return (
     <div className="cart-page">
@@ -15,19 +13,24 @@ const Cart = () => {
       ) : (
         <>
           <div className="cart-items">
-            {cart.map((item, index) => (
-              <div key={index} className="cart-item">
+            {cart.map((item) => (
+              <div key={`${item.id}-${item.type}`} className="cart-item">
                 <img src={item.image} alt={item.name} />
                 <div>
                   <h3>{item.name}</h3>
                   <p>${item.price}</p>
-                  <Button onClick={() => removeFromCart(index)}>Remove</Button>
+                  <div className="quantity-controls">
+                    <button onClick={() => updateQuantity(item.id, item.type, item.quantity - 1)} className="quantity-btn">-</button>
+                    <span className="quantity">{item.quantity}</span>
+                    <button onClick={() => updateQuantity(item.id, item.type, item.quantity + 1)} className="quantity-btn">+</button>
+                    <button onClick={() => removeFromCart(item.id, item.type)} className="delete-btn">Delete</button>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
           <div className="cart-total">
-            <h2>Total: ${total}</h2>
+            <h2>Total: ${getTotalPrice()}</h2>
             <Button onClick={clearCart}>Clear Cart</Button>
             <Button>Checkout</Button>
           </div>

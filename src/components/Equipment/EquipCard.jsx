@@ -4,10 +4,25 @@ import { useCart } from '../../context/CartContext';
 import './EquipCard.css';
 
 const EquipCard = ({ equipment }) => {
-  const { addToCart } = useCart();
+  const { cart, addToCart, updateQuantity, removeFromCart } = useCart();
+
+  const cartItem = cart.find(item => item.id === equipment.id && item.type === 'equipment');
+  const quantity = cartItem ? cartItem.quantity : 0;
 
   const handleAddToCart = () => {
     addToCart(equipment, 'equipment');
+  };
+
+  const handleIncrease = () => {
+    updateQuantity(equipment.id, 'equipment', quantity + 1);
+  };
+
+  const handleDecrease = () => {
+    updateQuantity(equipment.id, 'equipment', quantity - 1);
+  };
+
+  const handleRemove = () => {
+    removeFromCart(equipment.id, 'equipment');
   };
 
   return (
@@ -16,7 +31,16 @@ const EquipCard = ({ equipment }) => {
       <h3>{equipment.name}</h3>
       <p>Category: {equipment.category}</p>
       <p className="price">${equipment.price}</p>
-      <Button onClick={handleAddToCart}>Buy Now</Button>
+      {quantity === 0 ? (
+        <Button onClick={handleAddToCart}>Add to Cart</Button>
+      ) : (
+        <div className="quantity-controls">
+          <button onClick={handleDecrease} className="quantity-btn">-</button>
+          <span className="quantity">{quantity}</span>
+          <button onClick={handleIncrease} className="quantity-btn">+</button>
+          <button onClick={handleRemove} className="delete-btn">Delete</button>
+        </div>
+      )}
     </Card>
   );
 };

@@ -1,44 +1,67 @@
 import { useState, useEffect } from 'react';
-import Card from '../../components/UI/Card';
-import Button from '../../components/UI/Button';
+import FreeGiveFilters from '../../components/FreeGive/FreeGiveFilters';
+import FreeGiveList from '../../components/FreeGive/FreeGiveList';
 import { api } from '../../api/api';
 import './FreeGive.css';
 
 const FreeGive = () => {
   const [freeAnimals, setFreeAnimals] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [filteredFreeAnimals, setFilteredFreeAnimals] = useState([]);
+  const [filters, setFilters] = useState({
+    category: '',
+    minAge: '',
+    maxAge: '',
+    search: ''
+  });
 
   useEffect(() => {
     const fetchFreeAnimals = async () => {
       try {
         const data = await api.getFreeAnimals();
         setFreeAnimals(data);
+        setFilteredFreeAnimals(data);
       } catch (error) {
         console.error('Error fetching free animals:', error);
-      } finally {
-        setLoading(false);
       }
     };
     fetchFreeAnimals();
   }, []);
 
-  if (loading) return <div>Loading free animals...</div>;
+  const applyFilters = () => {
+    let filtered = freeAnimals;
+
+    if (filters.search) {
+      filtered = filtered.filter(item =>
+        item.name.toLowerCase().includes(filters.search.toLowerCase())
+      );
+    }
+
+    if (filters.category) {
+      filtered = filtered.filter(item => item.category === filters.category);
+    }
+
+    if (filters.minAge) {
+      filtered = filtered.filter(item => item.age >= parseInt(filters.minAge));
+    }
+
+    if (filters.maxAge) {
+      filtered = filtered.filter(item => item.age <= parseInt(filters.maxAge));
+    }
+
+    setFilteredFreeAnimals(filtered);
+  };
+
+  useEffect(() => {
+    applyFilters();
+  }, [filters, freeAnimals]);
 
   return (
     <div className="free-give-page">
-      <h1>Free Animals</h1>
-      <p>Animals available for free adoption.</p>
-      <div className="free-animals-grid">
-        {freeAnimals.map(animal => (
-          <Card key={animal.id} className="free-animal-card">
-            <img src={animal.image} alt={animal.name} />
-            <h3>{animal.name}</h3>
-            <p>Age: {animal.age} years</p>
-            <p>Category: {animal.category}</p>
-            <Button>Adopt Me</Button>
-          </Card>
-        ))}
+      <h1 className="free-give-title">Free Animals</h1>
+      <div className="filters-section">
+        <FreeGiveFilters filters={filters} setFilters={setFilters} />
       </div>
+      <FreeGiveList freeAnimals={filteredFreeAnimals} />
     </div>
   );
 };

@@ -12,9 +12,10 @@ import FreeGive from "./pages/FreeGive/FreeGive";
 import Donations from "./pages/Donations/Donations";
 import VetClinics from "./pages/VetClinics/VetClinics";
 import Equipments from "./pages/Equipments/Equipments";
-import Login from "./pages/Login/Login";
+import Login from "./pages/LogIn/LogIn";
 import Profile from "./pages/Profile/Profile";
 import Cart from "./pages/Cart/Cart";
+import Contact from "./pages/Contact/Contact";
 import AddAnimal from "./pages/AddAnimal/AddAnimal";
 import "./App.css";
 
@@ -41,6 +42,7 @@ function App() {
                 <Route path="equipments" element={<Equipments />} />
                 <Route path="cart" element={<Cart />} />
                 <Route path="profile" element={<Profile />} />
+                <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
           </BrowserRouter>

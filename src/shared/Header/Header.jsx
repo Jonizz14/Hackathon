@@ -8,7 +8,7 @@ import './Header.css';
 
 function Header() {
   const { user, logout } = useAuth();
-  const { cart } = useCart();
+  const { cart, getCartCount } = useCart();
   const [menuOpen, setMenuOpen] = useState(false);
   const [showHeader, setShowHeader] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
@@ -111,6 +111,7 @@ function Header() {
             <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
             <li><Link to="/vet-clinics" onClick={closeAllDropdowns}>Vet Clinics</Link></li>
             <li><Link to="/equipments" onClick={closeAllDropdowns}>Equipments</Link></li>
+            <li><Link to="/contact" onClick={closeAllDropdowns}>Contact</Link></li>
           </ul>
           
           <div className="header__nav-right-section">
@@ -127,8 +128,7 @@ function Header() {
             ) : (
               <Link to="/login" onClick={closeAllDropdowns}>Login</Link>
             )}
-            <Link to="/cart" className="cart-link" data-count={cart.length} onClick={closeAllDropdowns}>
-              <FaShoppingCart />
+            <Link to="/cart" className="cart-link" data-count={getCartCount()} onClick={closeAllDropdowns}>
               <span>Cart</span>
             </Link>
           </div>
@@ -153,6 +153,7 @@ function Header() {
               <li><Link to="/donations" onClick={closeAllDropdowns}>Donations</Link></li>
               <li><Link to="/vet-clinics" onClick={closeAllDropdowns}>Vet Clinics</Link></li>
               <li><Link to="/equipments" onClick={closeAllDropdowns}>Equipments</Link></li>
+              <li><Link to="/contact" onClick={closeAllDropdowns}>Contact</Link></li>
               {user ? (
                 <>
                   <li><Link to="/profile" onClick={closeAllDropdowns}>Profile</Link></li>
@@ -163,7 +164,7 @@ function Header() {
               )}
               <li>
                 <Link to="/cart" onClick={closeAllDropdowns}>
-                  Cart ({cart.length})
+                  Cart ({getCartCount()})
                 </Link>
               </li>
             </ul>

@@ -46,7 +46,7 @@ const equipments = [
   { id: 5, name: 'Fish Tank', price: 150, category: 'Tank', image: 'https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=400&h=300&fit=crop' },
   { id: 6, name: 'Chew Toy', price: 15, category: 'Toy', image: 'https://images.unsplash.com/photo-1568572933382-74d440642117?w=400&h=300&fit=crop' },
   { id: 7, name: 'Litter Box', price: 30, category: 'Accessory', image: 'https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=400&h=300&fit=crop' },
-  { id: 8, name: 'Pet Shampoo', price: 25, category: 'Care', image: 'https://images.unsplash.com/photo-1594736797933-d0e22ba2c8e0?w=400&h=300&fit=crop' }
+  { id: 8, name: 'Pet Shampoo', price: 25, category: 'Care', image: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop' }
 ];
 
 const users = [

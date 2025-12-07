@@ -80,22 +80,10 @@ const Animals = () => {
     <div className="animals-page">
       <h1>Animals for Sale</h1>
       {showAddForm && <AddAnimalForm onAdd={handleAddAnimal} />}
-      <div className="search-bar">
-        <input
-          type="text"
-          placeholder="Search by name"
-          value={filters.search}
-          onChange={(e) => setFilters({ ...filters, search: e.target.value })}
-        />
+      <div className="filters-section">
+        <AnimalFilters filters={filters} setFilters={setFilters} />
       </div>
-      <div className="animals-container">
-        <aside className="animals-sidebar">
-          <AnimalFilters filters={filters} setFilters={setFilters} />
-        </aside>
-        <main className="animals-main">
-          <AnimalList animals={filteredAnimals} onDelete={handleDeleteAnimal} />
-        </main>
-      </div>
+      <AnimalList animals={filteredAnimals} onDelete={handleDeleteAnimal} />
     </div>
   );
 };

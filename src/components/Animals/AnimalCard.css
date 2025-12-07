@@ -1,5 +1,8 @@
 .animal-card {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 350px;
 }
 
 .animal-image {
@@ -30,7 +33,7 @@
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: auto;
 }
 
 .delete-btn {

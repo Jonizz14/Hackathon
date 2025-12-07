@@ -1,4 +1,4 @@
-.animal-filters {
+.equipments-filters {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -9,14 +9,15 @@
   flex-wrap: wrap;
 }
 
-.animal-filters h3 {
+.equipments-filters h3 {
   margin: 0;
   color: #2c3e50;
   font-size: 1.2rem;
 }
 
-.animal-filters .search-input,
-.animal-filters select {
+.equipments-filters .search-input,
+.equipments-filters select,
+.equipments-filters .price-input {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -24,7 +25,7 @@
   min-width: 120px;
 }
 
-.animal-filters button {
+.equipments-filters button {
   padding: 8px 16px;
   background: #228b22;
   color: white;
@@ -34,17 +35,18 @@
   font-size: 14px;
 }
 
-.animal-filters button:hover {
+.equipments-filters button:hover {
   background: #1e6b1e;
 }
 
 @media (max-width: 768px) {
-  .animal-filters {
+  .equipments-filters {
     flex-direction: column;
     align-items: stretch;
   }
 
-  .animal-filters select {
+  .equipments-filters select,
+  .equipments-filters .price-input {
     min-width: auto;
   }
 }

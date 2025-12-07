@@ -19,14 +19,16 @@ const FosterCard = ({ foster }) => {
       <p>Age: {foster.age} years</p>
       <p>Category: {foster.category}</p>
       <p>Description: {foster.description}</p>
-      <Input
-        label="Your message"
-        type="text"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Why do you want to foster this animal?"
-      />
-      <Button onClick={handleApply}>Apply to Foster</Button>
+      <div className="foster-card-actions">
+        <Input
+          label="Your message"
+          type="text"
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Why do you want to foster this animal?"
+        />
+        <Button onClick={handleApply}>Apply to Foster</Button>
+      </div>
     </Card>
   );
 };
