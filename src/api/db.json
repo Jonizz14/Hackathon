@@ -6,7 +6,7 @@
       "age": 3,
       "price": 5000,
       "category": "Exotic",
-      "image": "https://via.placeholder.com/300x200?text=Lion"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgIVPxCejSOLMtZ4__IjHGvrp4RPI7ivC03Q&s"
     },
     {
       "id": "2",
@@ -14,7 +14,7 @@
       "age": 2,
       "price": 800,
       "category": "Farm",
-      "image": "https://via.placeholder.com/300x200?text=Cow"
+      "image": "https://hips.hearstapps.com/hmg-prod/images/dairy-cow-royalty-free-image-1710959416.jpg?crop=0.668xw:1.00xh;0.202xw,0&resize=640:*"
     },
     {
       "id": "3",
@@ -22,7 +22,7 @@
       "age": 1,
       "price": 300,
       "category": "Home Pets",
-      "image": "https://via.placeholder.com/300x200?text=Dog"
+      "image": "https://hips.hearstapps.com/hmg-prod/images/dog-puppy-on-garden-royalty-free-image-1586966191.jpg?crop=0.752xw:1.00xh;0.175xw,0&resize=1200:*"
     },
     {
       "id": "4",
@@ -30,7 +30,7 @@
       "age": 4,
       "price": 7000,
       "category": "Exotic",
-      "image": "https://via.placeholder.com/300x200?text=Tiger"
+      "image": "https://www.akronzoo.org/sites/default/files/styles/square_large/public/assets/animals/Tiger-main.png?h=7f3d6c03&itok=0LXXy7LI"
     },
     {
       "id": "5",
@@ -38,7 +38,7 @@
       "age": 1,
       "price": 400,
       "category": "Farm",
-      "image": "https://via.placeholder.com/300x200?text=Sheep"
+      "image": "https://media.4-paws.org/4/d/5/7/4d579ac34a8ee834f2c9acc26c4eaba336d7f034/shutterstock_97268789%20-%20lamb%20looking%20at%20camera%20-%20web%20size-1277x884.jpg"
     },
     {
       "id": "6",
@@ -46,7 +46,7 @@
       "age": 2,
       "price": 200,
       "category": "Home Pets",
-      "image": "https://via.placeholder.com/300x200?text=Cat"
+      "image": "https://d2zp5xs5cp8zlg.cloudfront.net/image-79322-800.jpg"
     },
     {
       "id": "7",
@@ -54,7 +54,7 @@
       "age": 5,
       "price": 15000,
       "category": "Exotic",
-      "image": "https://via.placeholder.com/300x200?text=Elephant"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx9P07yGoFtfeIrbVDV71HI_OJlLReEA53lQ&s"
     },
     {
       "id": "8",
@@ -62,7 +62,7 @@
       "age": 3,
       "price": 2000,
       "category": "Farm",
-      "image": "https://via.placeholder.com/300x200?text=Horse"
+      "image": "https://lh7-us.googleusercontent.com/f-zhn1fVem_NoW9ELOGQ21EZeHbdNLfKw3tfFblttScX3olF8qtHU-Xmc9JfAqueBmd-8c7DBXjwXJ4sRM8VJ1ZEBqXT7dQ-UztmVkWrDaOIfWSFzkua19JGC443paSjvYud9-tmv4_V-72GRA88TIY"
     },
     {
       "id": "9",
@@ -70,7 +70,7 @@
       "age": 1,
       "price": 50,
       "category": "Home Pets",
-      "image": "https://via.placeholder.com/300x200?text=Rabbit"
+      "image": "https://lafeber.com/vet/wp-content/uploads/european-rabbit.jpg"
     },
     {
       "id": "10",
@@ -78,7 +78,7 @@
       "age": 2,
       "price": 10000,
       "category": "Exotic",
-      "image": "https://via.placeholder.com/300x200?text=Panda"
+      "image": "https://m.media-amazon.com/images/I/811vSZAblZL._AC_SL1500_.jpg"
     }
   ],
   "foster": [
@@ -87,7 +87,7 @@
       "name": "Buddy",
       "age": 2,
       "category": "Dog",
-      "image": "https://via.placeholder.com/300x200?text=Buddy",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLd7YIufxhJF9d4fgL3FPjAmXqaXmO8sM0jw&s",
       "description": "Friendly dog looking for temporary home."
     },
     {
@@ -95,7 +95,7 @@
       "name": "Whiskers",
       "age": 1,
       "category": "Cat",
-      "image": "https://via.placeholder.com/300x200?text=Whiskers",
+      "image": "https://www.catster.com/wp-content/uploads/2023/12/cat-with-long-whiskers-looking-up_Jumpstory.jpg",
       "description": "Playful kitten needs care."
     }
   ],
@@ -105,7 +105,7 @@
       "name": "Max",
       "age": 3,
       "category": "Dog",
-      "image": "https://via.placeholder.com/300x200?text=Max",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY7x6r6tQ2tpk2ZaU6fDfDkjdUZ4MCpmkfyw&s",
       "description": "Loyal dog free for adoption."
     }
   ],
@@ -125,56 +125,56 @@
       "name": "Dog Food",
       "price": 20,
       "category": "Food",
-      "image": "https://via.placeholder.com/300x200?text=Dog+Food"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGdyE7D-UhzPMXIsj-MRL0xo5dCYeghg1RIg&s"
     },
     {
       "id": "2",
       "name": "Cat Toy",
       "price": 10,
       "category": "Toy",
-      "image": "https://via.placeholder.com/300x200?text=Cat+Toy"
+      "image": "https://www.jacksongalaxy.com/cdn/shop/files/Untitled_2203x2203px_1.png?v=1716926463&width=1946"
     },
     {
       "id": "3",
       "name": "Pet Bed",
       "price": 50,
       "category": "Bed",
-      "image": "https://via.placeholder.com/300x200?text=Pet+Bed"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuizxuQyb6MBYmGbmT5TGFtD3jobzV8m3tKQ&s"
     },
     {
       "id": "4",
       "name": "Bird Cage",
       "price": 100,
       "category": "Cage",
-      "image": "https://via.placeholder.com/300x200?text=Bird+Cage"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmEl0-fOz9iPh7gDEXeFid3Rs5Q0hG2EgZeQ&s"
     },
     {
       "id": "5",
       "name": "Fish Tank",
       "price": 150,
       "category": "Tank",
-      "image": "https://via.placeholder.com/300x200?text=Fish+Tank"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDpJ18LtR2BbJrBEQWSCmDbTzL_hOPu4LVvQ&s"
     },
     {
       "id": "6",
       "name": "Chew Toy",
       "price": 15,
       "category": "Toy",
-      "image": "https://via.placeholder.com/300x200?text=Chew+Toy"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPEL5tBQnG3ifVJqs1msgIC-YVnqUyaXn-iA&s"
     },
     {
       "id": "7",
       "name": "Litter Box",
       "price": 30,
       "category": "Accessory",
-      "image": "https://via.placeholder.com/300x200?text=Litter+Box"
+      "image": "https://weareallaboutcats.com/wp-content/uploads/2021/03/Litter-Box-101.jpg"
     },
     {
       "id": "8",
       "name": "Pet Shampoo",
       "price": 25,
       "category": "Care",
-      "image": "https://via.placeholder.com/300x200?text=Pet+Shampoo"
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTq0Vbv97CZcXh4DSopeyAycZmSdU4AYVEn1w&s"
     }
   ],
   "users": [
