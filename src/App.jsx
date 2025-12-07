@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./context/AuthContext";
 import { CartProvider } from "./context/CartContext";
 import { DonationProvider } from "./context/DonationContext";
+import ProtectedRoute from "./components/ProtectedRoute";
 import Layout from "./shared/Layout";
 import Home from "./pages/Home/Home";
 import Animals from "./pages/Animals/Animals";
@@ -23,7 +24,12 @@ function App() {
         <DonationProvider>
           <BrowserRouter>
             <Routes>
-              <Route path="/" element={<Layout />}>
+              <Route path="/login" element={<Login />} />
+              <Route path="/" element={
+                <ProtectedRoute>
+                  <Layout />
+                </ProtectedRoute>
+              }>
                 <Route index element={<Home />} />
                 <Route path="animals" element={<Animals />} />
                 <Route path="foster" element={<Foster />} />
@@ -32,7 +38,6 @@ function App() {
                 <Route path="vet-clinics" element={<VetClinics />} />
                 <Route path="equipments" element={<Equipments />} />
                 <Route path="cart" element={<Cart />} />
-                <Route path="login" element={<Login />} />
                 <Route path="profile" element={<Profile />} />
               </Route>
             </Routes>

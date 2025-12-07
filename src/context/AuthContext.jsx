@@ -39,6 +39,26 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
+  const register = async (username, password, email) => {
+    try {
+      const newUser = { id: Date.now(), username, password, email };
+      const response = await fetch('http://localhost:3001/users', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(newUser),
+      });
+      if (response.ok) {
+        setUser(newUser);
+        localStorage.setItem('user', JSON.stringify(newUser));
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error('Registration error:', error);
+      return false;
+    }
+  };
+
   const logout = () => {
     setUser(null);
     localStorage.removeItem('user');
@@ -47,6 +67,7 @@ export const AuthProvider = ({ children }) => {
   const value = {
     user,
     login,
+    register,
     logout,
     loading,
   };
