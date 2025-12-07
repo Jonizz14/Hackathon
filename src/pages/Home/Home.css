@@ -1,21 +1,24 @@
 .home-page {
-  min-height: calc(100vh - 130px);
+  min-height: calc(100vh - 70px);
+  background: #f5f5dc;
 }
 .container {
-  max-width: 1200px;
+  max-width: 1150px;
   margin: 0 auto;
   padding: 0 2rem;
 }
 .hero-section {
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
   padding: 4rem 0 6rem;
   position: relative;
   overflow: hidden;
-  padding-left: 50px;
+  padding-left: 30px;
   padding-right: 10px;
 }
-
+.hero-text{
+ margin-right: 50px;
+}
 .hero-section::before {
   content: '';
   position: absolute;
@@ -23,17 +26,21 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="80" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="60" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="30" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
-  opacity: 0.5;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(34, 139, 34, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(222, 184, 135, 0.1) 0%, transparent 50%);
+  pointer-events: none;
 }
 
 .hero-content {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 1;
+
 }
 
 .hero-title {
@@ -43,6 +50,7 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+  width: 500px;
 }
 
 .hero-icon {
@@ -99,14 +107,14 @@
 }
 
 .btn-primary {
-  background: #10b981;
+  background: #2c3e50;
   color: white;
 }
 
 .btn-primary:hover {
-  background: #059669;
+  background: #34495e;
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.3);
 }
 
 .btn-secondary {
@@ -146,7 +154,7 @@
 }
 .services-section {
   padding: 5rem 0;
-  background: #f8fafc;
+  background: linear-gradient(180deg, #f5f5dc 0%, #fffaf0 100%);
 }
 
 .section-title {
@@ -188,7 +196,7 @@
 .service-icon {
   width: 80px;
   height: 80px;
-  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -196,7 +204,7 @@
   margin: 0 auto 1.5rem;
   color: white;
   font-size: 2rem;
-  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.3);
 }
 
 .service-card h3 {
@@ -213,7 +221,7 @@
 }
 
 .service-link {
-  color: #667eea;
+  color: #228b22;
   text-decoration: none;
   font-weight: 600;
   font-size: 1rem;
@@ -221,7 +229,7 @@
 }
 
 .service-link:hover {
-  color: #5a67d8;
+  color: #1a5f17;
   text-decoration: underline;
 }
 .features-section {
@@ -258,7 +266,7 @@
 .feature-check {
   width: 24px;
   height: 24px;
-  background: #10b981;
+  background: #228b22;
   color: white;
   border-radius: 50%;
   display: flex;
@@ -291,12 +299,12 @@
 .features-placeholder {
   width: 350px;
   height: 350px;
-  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 20px 60px rgba(16, 185, 129, 0.3);
+  box-shadow: 0 20px 60px rgba(44, 62, 80, 0.3);
 }
 
 .features-icon {
@@ -307,7 +315,7 @@
 
 .cta-section {
   padding: 5rem 0;
-  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
   color: white;
 }
 
@@ -450,3 +458,4 @@
     font-size: 2rem;
   }
 }
+
